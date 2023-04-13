@@ -1,0 +1,47 @@
+.bottom-nav {
+  --height: 4rem;
+  --icon: 75%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: var(--height);
+    background-color: hsl(255, 22%, 72%);
+    color: black;
+  }
+
+  a,
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  li {
+    height: var(--height);
+  }
+
+  a,
+  svg {
+    height: var(--icon);
+    width: var(--icon);
+  }
+
+  svg {
+    --color: black;
+    fill: var(--color);
+
+    polyline,
+    path,
+    line {
+      stroke: var(--color);
+    }
+  }
+  @media (min-width: 500px) {
+    display: none;
+  }
+}

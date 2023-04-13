@@ -1,0 +1,33 @@
+.individual-movie-section {
+  background-color: hsl(256, 16%, 32%);
+  color: white;
+  padding: 1rem 0;
+  margin-bottom: 6rem;
+
+  .video {
+    width: 100%;
+
+    padding: 1rem 1rem;
+
+    iframe {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 5px;
+    }
+  }
+
+  h1 {
+    padding: 0 1rem;
+    width: 100%;
+  }
+
+  p,
+  h3 {
+    margin: 1rem 1rem;
+  }
+
+  #disqus_thread {
+    border-top: 1px white solid;
+    padding: 1rem 1rem;
+  }
+}
