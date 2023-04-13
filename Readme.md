@@ -21,6 +21,7 @@ different Sass files for each component.
 # Functionality
 
 The application's offers the following features:
+
 ● Signup Page : The Signup page is the first page that newly
 registered users will see. It offers a simple form for users to fill out with
 their basic details, including their email address and password. The
@@ -59,13 +60,16 @@ the routes for handling incoming requests. It listens on a specified port and
 uses middleware like express.json() and cors() to handle incoming data in
 different formats like JSON or form data. It also includes the routes for the
 user management system (/ums) and movie-related routes (/api/movie).
+
 The api.js file contains the implementation for the user management system,
 with routes for retrieving all users, retrieving one user by ID, and
 authenticating a user via a login route. It uses the mysql package to connect
 to a MySQL database and execute SQL queries. It also includes some data
 sanitization to remove sensitive information from the retrieved user data.
+
 The urls.js file contains constants that hold API URLs for getting movie-related
 data from an external source.
+
 The movie.js file contains the implementation for movie-related routes,
 including getting movies by genre, getting all genres, getting single movie
 details, searching for a movie, and getting animated movies. It uses functions
@@ -78,15 +82,20 @@ The backend provides the following API endpoints:
 /get-genres (GET): Retrieves all the different genres of movies.
 
 /movie-genre/:genreId (GET): Retrieves a list of movies based on the genre ID.
+
 /single-movie/:movieId (GET): Retrieves detailed information about a single
 movie, including basic details, videos, and reviews.
+
 /search/:query (GET): Searches for movies based on a query string.
+
 /animated (GET): Retrieves animated movies for kids.
+
 /ums/login (POST): Handles user login functionality.
 
 # How to Start the Backend
 
 To start the backend, follow these steps:
+
 ● Go to the backend directory in the terminal after it is opened.
 
 ● To install the dependencies, type npm install into your terminal.
